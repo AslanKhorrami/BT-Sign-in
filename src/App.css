@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "BNazanin";
+  src: url("./fonts/BNazanin.eot");
+  src: url("./fonts/BNazanin.eot?#iefix") format("BNazanin-opentype"),
+    url("./fonts/BNazanin.woff") format("woff"),
+    url("./fonts/BNazanin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "BTitr";
+  src: url("./fonts/BTitrBold.eot");
+  src: url("./fonts/BTitrBold.eot?#iefix") format("BTitr-opentype"),
+    url("./fonts/BTitrBold.woff") format("woff"),
+    url("./fonts/BTitrBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+  font-family: "BNazanin";
+}
+
+.row,
+.container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: unset;
+}
+
+/* Common Styles */
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: 0px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn-primary {
+  width: 100%;
+  margin-top: 10px;
+}
+.account-wall {
+  margin-top: 20px;
+  padding: 40px 0px 20px 0px;
+  background-color: #f7f7f7;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title {
+  color: #555;
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  font-family: "BTitr";
+  font-size: 20px;
+}
+.profile-img {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 100px;
+}
+.new-account {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.error {
+  color: red;
+  border-color: red;
+}
+
+.error::placeholder {
+  color: red;
+}
+.error::-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: red;
+}
+
+.error::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: red;
+}
+
+@media (max-width: 575.98px) {
+  .Sign-in-Form {
+    margin: 6vh auto;
+  }
+  .col-md-4 {
+    width: 100%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .Sign-in-Form {
+    margin: 6vh auto;
   }
-  to {
-    transform: rotate(360deg);
+  .col-md-4 {
+    width: 63%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .Sign-in-Form {
+    margin: 6vh auto;
+  }
+  .col-md-4 {
+    width: 48%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .Sign-in-Form {
+    margin: 10vh auto;
+  }
+  .col-md-4 {
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .Sign-in-Form {
+    margin: 12vh auto;
   }
 }
